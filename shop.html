@@ -1,0 +1,124 @@
+<!-- shop.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop - FurniStyle</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">FurniStyle</a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="cart.html">Cart(<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container my-4">
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <input type="text" id="search" class="form-control" placeholder="Search furniture...">
+      </div>
+      <div class="col-md-3">
+        <select id="categoryFilter" class="form-control">
+          <option value="">All Categories</option>
+          <option value="chair">Chairs</option>
+          <option value="sofa">Sofas</option>
+          <option value="table">Tables</option>
+          <option value="bed">Beds</option>
+          <option value="cabinet">Cabinet</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <select id="sortPrice" class="form-control">
+          <option value="">Sort by Price</option>
+          <option value="low-high">Low to High</option>
+          <option value="high-low">High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row" id="product-list">
+            <!-- Example Product -->
+        <div class="col-md-3 product-card" data-category="wardrobe">
+          <div class="card">
+            <img src="images/wardrobe7.jpg" class="card-img-top" alt="wardrobe">
+            <div class="card-body text-center">
+              <h5 class="card-title">Wardrobe</h5>
+              <p>$299</p>
+              <button class="btn btn-dark" onclick="addToCart('Modern Wardrobe', 299)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 product-card" data-category="chair">
+          <div class="card">
+            <img src="images/chair05.jpg" class="card-img-top" alt="Chair">
+            <div class="card-body text-center">
+              <h5 class="card-title">Wooden Chair</h5>
+              <p>$120</p>
+              <button class="btn btn-dark" onclick="addToCart('Wooden Chair', 120)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 product-card" data-category="table">
+          <div class="card">
+            <img src="images/Table4.jpg" class="card-img-top" alt="Table">
+            <div class="card-body text-center">
+              <h5 class="card-title">Dining Table</h5>
+              <p>$450</p>
+              <button class="btn btn-dark" onclick="addToCart('Dining Table', 450)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 product-card" data-category="sofa">
+          <div class="card">
+            <img src="images/sofa03.jpg" class="card-img-top" alt="Sofa">
+            <div class="card-body text-center">
+              <h5 class="card-title">Luxury Sofa</h5>
+              <p>$499</p>
+              <button class="btn btn-dark" onclick="addToCart('Luxury Sofa', 499)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3 product-card" data-category="cabinet">
+          <div class="card">
+            <img src="images/cabinet2.jpg" class="card-img-top" alt="cabinet">
+            <div class="card-body text-center">
+              <h5 class="card-title">Cabinet</h5>
+              <p>$499</p>
+              <button class="btn btn-dark" onclick="addToCart('Luxury Cabinet', 499)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3 product-card" data-category="bed">
+          <div class="card">
+            <img src="images/bed2.jpg" class="card-img-top" alt="bed">
+            <div class="card-body text-center">
+              <h5 class="card-title">Bed</h5>
+              <p>$499</p>
+              <button class="btn btn-dark" onclick="addToCart('Modern Bed', 499)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div> 
+      <!-- End Product List -->
+
+
+    <div class="text-center mt-4">
+      <button id="loadMore" class="btn btn-dark">Load More</button>
+    </div>
+  </div>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
+

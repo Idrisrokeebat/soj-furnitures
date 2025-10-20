@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — SOJ Furniture</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="brand-badge">EL</span>
+        <div class="d-flex flex-column">
+          <strong>SOJ</strong>
+          <small class="text-muted">Furniture & Interiors</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-outline-success ms-2" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero text-center">
+    <div class="container">
+      <h1 class="display-5 mb-3">We would Love to Hear From You</h1>
+      <p class="lead text-muted">Have questions or need help designing your dream space? Reach out to our team.</p>
+    </div>
+  </header>
+
+  <!-- CONTACT FORM -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h2 class="mb-3">Get in Touch</h2>
+          <p class="text-muted mb-4">
+            Fill out the form below, and our friendly team will get back to you within 24 hours.
+          </p>
+
+          <form id="contactForm" class="p-4 border rounded shadow-sm bg-white">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-control" rows="5" placeholder="How can we help you?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-outline-success w-100">Send Message</button>
+            <div id="formAlert" class="mt-3 text-center"></div>
+          </form>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="col-lg-6">
+          <h2 class="mb-3">Visit Our Showroom</h2>
+          <p class="text-muted">Come explore our handcrafted furniture collections in person.</p>
+
+          <ul class="list-unstyled mt-4">
+            <li class="mb-3"><strong>📍 Address:</strong> 42, Ekoro Road, Omi-ata Bus stop</li>
+            <li class="mb-3"><strong>📞 Phone:</strong> +234 813 773 7548</li>
+            <li class="mb-3"><strong>📧 Email:</strong> abideenadesoji@gmail.com</li>
+            <li class="mb-3"><strong>🕒 Hours:</strong> Mon–Sat: 9:00am – 6:00pm</li>
+          </ul>
+
+          <!-- MAP -->
+          <div class="map mt-4">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.953736616305!2d3.345!3d6.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b92d5d2dfb9d9%3A0x11b8efb05368d516!2sIkeja!5e0!3m2!1sen!2sng!4v1605547212345!5m2!1sen!2sng" 
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="mt-5">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <strong>SOJ</strong>
+        <div class="small text-muted">© <span id="year"></span> SOJ — All rights reserved</div>
+      </div>
+      <div class="text-end small">
+        <div>Follow us</div>
+        <div class="d-flex gap-2 mt-1">
+          <a href="#" class="link-light text-decoration-none">Instagram</a>
+          <a href="#" class="link-light text-decoration-none">Facebook</a>
+          <a href="#" class="link-light text-decoration-none">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="contact.js"></script>
+</body>
+</html>

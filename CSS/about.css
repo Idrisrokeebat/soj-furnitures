@@ -1,0 +1,54 @@
+:root {
+  --brand: #c0bae0;
+  --muted: #6c757d;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.hero {
+  background: linear-gradient(180deg, rgba(107,78,255,0.08), rgba(255,255,255,0));
+  padding: 4rem 0;
+}
+
+.brand-badge {
+  background: var(--brand);
+  color: white;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.lead-quiet {
+  color: var(--muted);
+}
+
+.feature-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: .75rem;
+  background: #f8f9fa;
+  display: grid;
+  place-items: center;
+  font-size: 1.35rem;
+}
+
+.team-photo {
+  height: 220px;
+  object-fit: cover;
+  border-radius: .6rem;
+}
+
+.usp {
+  background: #fbfcff;
+  border-left: 4px solid var(--brand);
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+footer {
+  background: #0f1724;
+  color: #cbd5e1;
+  padding: 2rem 0;
+}
