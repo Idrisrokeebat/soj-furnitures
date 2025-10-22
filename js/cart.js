@@ -18,8 +18,11 @@ function addToCart(productName, price) {
 function updateCartCount() {
   const cartCount = document.querySelector("cart-count");
   if (cartCount) {
-    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    const totalItems = cart.reduce((sum, existingItem) => sum + existingItem.quantity, 0);
     cartCount.textContent = totalItems;
+  }
+  else {
+    cart.push({ name: productName, price: price, quantity: 1 });
   }
 }
 
