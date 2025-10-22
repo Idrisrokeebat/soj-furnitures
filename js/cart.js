@@ -16,7 +16,7 @@ function addToCart(productName, price) {
 
 // --- Update Navbar Cart Count ---
 function updateCartCount() {
-  const cartCount = document.querySelector("cart-count");
+  const cartCount = document.querySelector("cartCount");
   if (cartCount) {
     const totalItems = cart.reduce((sum, existingItem) => sum + existingItem.quantity, 0);
     cartCount.textContent = totalItems;
