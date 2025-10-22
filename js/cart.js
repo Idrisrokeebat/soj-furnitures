@@ -1,6 +1,18 @@
 // --- Initialize Cart ---
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+// --- Update Navbar Cart Count ---
+function updateCartCount() {
+  const cartCount = document.querySelector("cartCount");
+  if (cartCount) {
+    const totalItems = cart.reduce((sum, existingItem) => sum + existingItem.quantity, 0);
+    cartCount.textContent = totalItems;
+  }
+  else {
+    cart.push({ name: productName, price: price, quantity: 1 });
+  }
+}
+
 // --- Add to Cart Function ---
 function addToCart(productName, price) {
   const existingItem = cart.find(item => item.name === productName);
@@ -12,18 +24,6 @@ function addToCart(productName, price) {
   localStorage.setItem("cart", JSON.stringify(cart));
   alert(`${productName} added to cart!`);
   updateCartCount();
-}
-
-// --- Update Navbar Cart Count ---
-function updateCartCount() {
-  const cartCount = document.querySelector("cartCount");
-  if (cartCount) {
-    const totalItems = cart.reduce((sum, existingItem) => sum + existingItem.quantity, 0);
-    cartCount.textContent = totalItems;
-  }
-  else {
-    cart.push({ name: productName, price: price, quantity: 1 });
-  }
 }
 
 // --- Remove from Cart ---
