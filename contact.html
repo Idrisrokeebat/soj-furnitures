@@ -8,33 +8,49 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="CSS/contact.css"> <!-- fixed path to CSS folder -->
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-warning shadow-sm">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-        <span class="brand-badge">EL</span>
-        <div class="d-flex flex-column">
-          <strong>SOJ</strong>
-          <small class="text-muted">Furniture & Interiors</small>
+  <!-- Header / Navbar -->
+  <header class="sticky-top bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <div class="logo-circle">SF</div>
+        <div>
+          <div class="brand-title">SOJ Furniture</div>
+          <small class="text-muted brand-sub">Comfort • Craft • Care</small>
         </div>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Categories</a></li>
           <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-          <li class="nav-item"><a class="nav-link btn btn-outline-success ms-2" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+          <li class="nav-item ms-3">
+            <form class="d-flex align-items-center" role="search">
+              <input class="form-control form-control-sm me-2" type="search" placeholder="Search furniture" aria-label="Search">
+            </form>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="btn btn-outline-primary position-relative" href="cart.html" id="cartBtn">
+              <i class="bi bi-cart"></i> Cart
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart-count">0</span>
+            </a>
+          </li>
         </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <!-- HERO -->
   <header class="hero text-center">
@@ -120,6 +136,6 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Custom JS -->
-  <script src="contact.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html>
