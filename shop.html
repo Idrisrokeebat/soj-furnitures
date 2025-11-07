@@ -26,19 +26,11 @@
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto align-items-lg-center">
           <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="shop.html">Categories</a></li>
           <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">Testimonials</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
           <li class="nav-item ms-3">
-            <form class="d-flex align-items-center" role="search">
-              <input class="form-control form-control-sm me-2" type="search" placeholder="Search furniture" aria-label="Search">
-            </form>
-          </li>
-          <li class="nav-item ms-3">
-            <a class="btn btn-outline-primary position-relative" href="cart.html" id="cartBtn">
+            <a class="btn btn-outline-primary position-relative mt-3" href="cart.html" id="cartBtn">
               <i class="bi bi-cart"></i> Cart
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart-count">0</span>
             </a>
@@ -48,7 +40,7 @@
     </nav>
   </header>
 
-  <div class="container my-4">
+  <div class="m-h-3">
     <div class="row mb-3">
       <div class="col-md-3">
         <input type="text" id="search" class="form-control" placeholder="Search furniture...">
@@ -79,7 +71,7 @@
             <img src="images/wardrobe7.jpg" class="card-img-top" alt="wardrobe">
             <div class="card-body text-center">
               <h5 class="card-title">Wardrobe</h5>
-              <p>#299000</p>
+              <p>#299,000</p>
               <button class="btn btn-dark" onclick="addToCart('Modern Wardrobe', 299)">Add to Cart</button>
             </div>
           </div>
@@ -90,7 +82,7 @@
             <img src="images/chair05.jpg" class="card-img-top" alt="Chair">
             <div class="card-body text-center">
               <h5 class="card-title">Wooden Chair</h5>
-              <p>#120000</p>
+              <p>#120,000</p>
               <button class="btn btn-dark" onclick="addToCart('Wooden Chair', 120)">Add to Cart</button>
             </div>
           </div>
@@ -101,7 +93,7 @@
             <img src="images/Table4.jpg" class="card-img-top" alt="Table">
             <div class="card-body text-center">
               <h5 class="card-title">Dining Table</h5>
-              <p>#450000</p>
+              <p>#450,000</p>
               <button class="btn btn-dark" onclick="addToCart('Dining Table', 450)">Add to Cart</button>
             </div>
           </div>
@@ -112,7 +104,7 @@
             <img src="images/sofa03.jpg" class="card-img-top" alt="Sofa">
             <div class="card-body text-center">
               <h5 class="card-title">Luxury Sofa</h5>
-              <p>#499000</p>
+              <p>#750,000</p>
               <button class="btn btn-dark" onclick="addToCart('Luxury Sofa', 499)">Add to Cart</button>
             </div>
           </div>
@@ -123,7 +115,7 @@
             <img src="images/cabinet2.jpg" class="card-img-top" alt="cabinet">
             <div class="card-body text-center">
               <h5 class="card-title">Cabinet</h5>
-              <p>#499000</p>
+              <p>#499,000</p>
               <button class="btn btn-dark" onclick="addToCart('Luxury Cabinet', 499)">Add to Cart</button>
             </div>
           </div>
@@ -134,8 +126,19 @@
             <img src="images/bed2.jpg" class="card-img-top" alt="bed">
             <div class="card-body text-center">
               <h5 class="card-title">Bed</h5>
-              <p>#499000</p>
+              <p>#499,000</p>
               <button class="btn btn-dark" onclick="addToCart('Modern Bed', 499)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-2 product-card" data-category="cabinet">
+          <div class="card">
+            <img src="images/cabinet3.jpg" alt="cabinet" class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">Cabinet</h5>
+              <p>#130,000</p>
+              <button class="btn btn-dark" onclick="addToCart('Royal cabinet', 499)">Add to Cart</button>
             </div>
           </div>
         </div>
